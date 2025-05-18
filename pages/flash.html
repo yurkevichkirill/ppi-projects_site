@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои проекты | Юркевич Кирилл</title>
+  <link rel="stylesheet" href="../styles/style_projects.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .projects-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 30px 0;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+    
+    .projects-table th {
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      color: white;
+    }
+    
+    .projects-table td, .projects-table th {
+      padding: 12px 15px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .projects-table td{
+      font-size: 30px;
+    }
+    
+    .projects-table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .project-preview {
+      width: 400px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    
+    .category {
+      display: inline-block;
+      padding: 4px 8px;
+      background: #f0f0f0;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    
+    .view-btn {
+      background: none;
+      border: 1px solid #6e8efb;
+      color: #6e8efb;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    
+    .view-btn:hover {
+      background: #6e8efb;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><i class="fas fa-project-diagram"></i> Мои проекты</h1>
+    </div>
+    
+    <div class="sidebar">
+      <div class="page-links">
+        <button><a href="../index.html"><i class="fas fa-home"></i> Главная</a></button>
+        <button><a href="description.html"><i class="fas fa-info-circle"></i> Обо мне</a></button>
+        <button><a href="projects.html"><i class="fas fa-project-diagram"></i> Проекты</a></button>
+      </div>
+            
+      <div class="recent-projects">
+        <h3><i class="fas fa-history"></i>Другие программы</h3>
+        <ol>
+          <li><a href="photoshop.html">Photoshop</a></li>
+          <li><a href="corel.html">CorelDraw</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="nav">
+      <h2><i class="fas fa-address-card"></i> Контактная информация</h2>
+      <div class="contact-data">
+        <div>
+          <label for="name"><i class="fas fa-user"></i> Имя</label>
+          <input type="text" value="Юркевич Кирилл Александрович" id="name" disabled>
+        </div>
+        <div>
+          <label for="tel"><i class="fas fa-phone"></i> Телефон</label>
+          <input type="text" id="tel" value="+375295733977" disabled>
+        </div>
+        <div>
+          <label for="mail"><i class="fas fa-envelope"></i> Почта</label>
+          <input type="text" id="mail" value="kirill.iurkievich@mail.ru" disabled>
+        </div>
+        <div>
+          <label for="git"><i class="fab fa-github"></i> Github</label>
+          <input type="text" id="git" value="yurkevichkirill" disabled>
+        </div>
+        <div>
+          <label for="tg"><i class="fab fa-telegram"></i> Telegram</label>
+          <input type="text" id="tg" value="@yurkevich16" disabled>
+        </div>
+      </div>
+    </div>
+    
+    <div class="article">      
+      <h3><i class="fas fa-cogs"></i> Проекты Flash</h3>      
+      <table class="projects-table">
+        <thead>
+          <tr>
+            <th>Изображение</th>
+            <th>Название</th>
+            <th>Время работы</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="../projects/flash/football.gif" alt="Анимация движения" class="project-preview">
+            </td>
+            <td>Анимация движения</td>
+            <td>4 часа</td>
+          </tr>
+          <tr>
+            <td><img src="../projects/flash/form.gif" alt="Анимация формы" class="project-preview"></td>
+            <td>Анимация формы</td>
+            <td>3 часа</td>
+          </tr>
+          <tr>
+            <td><img src="../projects/flash/game.png" alt="Игра" class="project-preview"></td>
+            <td>Игра</td>
+            <td>6 часов</td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+    
+    <div class="footer">
+      © 2025 Юркевич Кирилл | <a href="https://mail.ru/kirill.iurkievich@mail.ru" style="color: white;">Связаться</a>
+    </div>
+  </div>
+</body>
+</html>
